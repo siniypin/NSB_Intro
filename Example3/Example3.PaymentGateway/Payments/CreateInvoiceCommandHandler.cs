@@ -8,19 +8,16 @@ namespace Example3.Payments
 {
     public partial class CreateInvoiceCommandHandler
     {
+        public Schedule Scheduler { get; set; }
+
         partial void HandleImplementation(CreateInvoiceCommand message)
         {
             // TODO: CreateInvoiceCommandHandler: Add code to handle the CreateInvoiceCommand message.
             Console.WriteLine("Payments received " + message.GetType().Name);
-            var t = new Timer(5000);
-            t.Elapsed += (s, e) =>
-            {
-                var invoiceSentToCollection = new Example3.Contracts.Payments.InvoiceSentToCollection() { UserId = message.UserId };
-                Bus.Publish(invoiceSentToCollection);
-                t.Dispose();
-            };
-            t.Start();
-            GC.SuppressFinalize(t);
+            //Scheduler.Every(TimeSpan.FromSeconds(10), () =>
+            //{
+            //    Bus.Publish<Example3.Contracts.Payments.InvoiceSentToCollection>(x => { x.UserId = message.UserId; });
+            //});
         }
     }
 }
