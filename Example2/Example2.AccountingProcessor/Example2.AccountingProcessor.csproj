@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E2D7E16-22A1-41E4-9681-E0583527D1E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Example2.AccountingProcessor</RootNamespace>
+    <AssemblyName>Example2.AccountingProcessor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.5.2.4\lib\net45\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.6.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.CustomChecks">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.CustomChecks.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.CustomChecks.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.DebugSession">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.DebugSession.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.DebugSession.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.1.1.0\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.SagaAudit">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.SagaAudit.1.0.1\lib\net45\ServiceControl.Plugin.Nsb5.SagaAudit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\ContractCreatedEventHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f8ab76b5a-803b-48f7-8d63-fdfcc017f0b3</SourceModelReference>
+      <ItemGuid>245fea70-99ed-44cf-99f5-e701312cedc2</ItemGuid>
+    </Compile>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <ItemGuid>49996d77-1ad6-4cbc-a40e-2ca6285ec188</ItemGuid>
+    </Compile>
+    <Compile Include="EndpointConfig.generated.cs">
+      <DependentUpon>EndpointConfig.cs</DependentUpon>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <ItemGuid>53defe89-5602-430d-919f-259620b1586d</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\Accounting\ContractCreatedEventHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f8ab76b5a-803b-48f7-8d63-fdfcc017f0b3</SourceModelReference>
+      <ItemGuid>52955307-5010-45d2-9db7-31b5c5ad6801</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <ItemGuid>afea0f2c-6e1c-47ac-bef9-ddf05d3e84a8</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ItemGuid>385467eb-9a89-492c-9eb4-f21e6a8f4939</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\INServiceBusComponent.cs">
+      <ItemGuid>23b67ecc-d63c-4b97-a7a6-ffa14424c684</ItemGuid>
+    </Compile>
+    <Compile Include="TransportConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <ItemGuid>4caf1383-a914-47cf-8667-3f3bb27cf10d</ItemGuid>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <ItemGuid>9d8ce28f-0b04-4b8d-941c-9cdd04d3b560</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>5650e0ef-7ef6-4f5c-b570-f785017baec0</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>6405da0d-2cf9-458e-8ace-97f30d4e698e</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>709638fc-7bf2-4d83-a7e6-ae932d394c40</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>9680a517-dc23-4153-8ee2-2617361f9383</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>d64cd80d-57c9-4c61-b016-93b51d5c2cd6</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConnectionString.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>8f32fee0-402f-499c-b2e4-a79ef9e161dc</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>54337ec6-9040-4310-920f-f78abaf654aa</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\AuditConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>5873e57f-ed36-4c45-83ac-198d3979aa32</ItemGuid>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Example2.Contracts\Example2.Contracts.csproj">
+      <Project>{A347CD91-C39D-4DE2-8B36-BDE1720DD5AD}</Project>
+      <Name>Example2.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
