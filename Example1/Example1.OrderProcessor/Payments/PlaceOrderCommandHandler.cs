@@ -12,8 +12,8 @@ namespace Example1.Payments
         {
             // TODO: PlaceOrderCommandHandler: Add code to handle the PlaceOrderCommand message.
             Console.WriteLine("Payments received " + message.GetType().Name);
-            var createInvoiceCommand = new Example1.Internal.Commands.Payments.CreateInvoiceCommand();
-            Bus.Send(createInvoiceCommand);
+            //var createInvoiceCommand = new Example1.Internal.Commands.Payments.CreateInvoiceCommand();
+            //Bus.Send(createInvoiceCommand);
         }
 
     }

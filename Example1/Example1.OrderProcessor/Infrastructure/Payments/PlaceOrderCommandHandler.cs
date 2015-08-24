@@ -14,7 +14,7 @@ using Example1.Internal.Commands.Payments;
 
 namespace Example1.Payments
 {
-    public partial class PlaceOrderCommandHandler : IPlaceOrderCommandHandler, ServiceMatrix.Shared.INServiceBusComponent, IHandleMessages<PlaceOrderCommand>
+    public partial class PlaceOrderCommandHandler : IHandleMessages<PlaceOrderCommand>
     {
 		
 		public void Handle(PlaceOrderCommand message)
@@ -25,25 +25,9 @@ namespace Example1.Payments
 
 		partial void HandleImplementation(PlaceOrderCommand message);
 
-        public void Send(CreateInvoiceCommand message)
-        {
-            ConfigureCreateInvoiceCommand(message);
-            Bus.Send(message);
-        }
-
-        partial void ConfigureCreateInvoiceCommand(CreateInvoiceCommand message);
-
         public IBus Bus { get; set; }
 
     }
-
-	
-	public partial interface IPlaceOrderCommandHandler
-    {
-        
-        void Send(CreateInvoiceCommand message);
-
-	}
 
 	
 }
