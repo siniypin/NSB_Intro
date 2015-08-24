@@ -1,4 +1,4 @@
-﻿namespace ServiceMatrix.Shared
+namespace ServiceMatrix.Shared
 {
     public interface INServiceBusComponent
     {

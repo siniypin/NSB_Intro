@@ -57,8 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accounting\ContractCreatedEventHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f8ab76b5a-803b-48f7-8d63-fdfcc017f0b3</SourceModelReference>
-      <ItemGuid>245fea70-99ed-44cf-99f5-e701312cedc2</ItemGuid>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f99d00129-b059-49a3-8fe4-922832e73792</SourceModelReference>
+      <ItemGuid>1aee5fab-26a0-4e6f-9f4e-953b1676ffbe</ItemGuid>
     </Compile>
     <Compile Include="EndpointConfig.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
@@ -70,8 +70,8 @@
       <ItemGuid>53defe89-5602-430d-919f-259620b1586d</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\Accounting\ContractCreatedEventHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f8ab76b5a-803b-48f7-8d63-fdfcc017f0b3</SourceModelReference>
-      <ItemGuid>52955307-5010-45d2-9db7-31b5c5ad6801</ItemGuid>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f99d00129-b059-49a3-8fe4-922832e73792</SourceModelReference>
+      <ItemGuid>791ef949-1180-4671-8a86-7893993391b1</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\MessageConventions.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>

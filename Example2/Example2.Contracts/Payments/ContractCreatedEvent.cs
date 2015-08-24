@@ -1,9 +1,14 @@
-﻿using System;
+using System;
 
 namespace Example2.Contracts.Payments
 {
-    public class ContractCreatedEvent
+    public interface ContractCreatedEvent
     {
-        public int UserId { get; set; }
+        int UserId { get; set; }
+    }
+
+    public interface ContractCreatedExtendedEvent : ContractCreatedEvent
+    {
+        DateTime Date { get; set; }
     }
 }

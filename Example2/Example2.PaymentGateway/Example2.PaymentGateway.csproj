@@ -136,6 +136,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Example2.Contracts\Example2.Contracts.csproj">
+      <Project>{A347CD91-C39D-4DE2-8B36-BDE1720DD5AD}</Project>
+      <Name>Example2.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Example2.Internal\Example2.Internal.csproj">
       <Project>{D6DC2AF6-5AE4-4E74-8917-EDCCF512CB40}</Project>
       <Name>Example2.Internal</Name>
