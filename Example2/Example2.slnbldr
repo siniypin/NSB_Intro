@@ -439,6 +439,30 @@
                     </collection>
                   </elements>
                 </element>
+                <element Id="086bb4c2-065e-4cd3-ab24-f98fc3ff6680" definitionId="4aac6b0a-1178-4761-ac92-d2989a83335b" definitionName="Service" instanceName="Marketing">
+                  <elements>
+                    <collection Id="1ac51d0a-95f6-472c-bbac-4e3e64f9db63" definitionId="14dd0a39-32b5-4814-9ed5-4279aba392af" definitionName="Contract" instanceName="Contract">
+                      <elements>
+                        <collection Id="ea08d4bb-5c0c-4a8a-8d15-e1fe7eb2d7b2" definitionId="6b6c2df4-f261-4d62-819f-70e170c196ca" definitionName="Events" instanceName="Events">
+                          <properties>
+                            <property Id="c89d2fb9-3017-4322-9fa1-76d692187d54" definitionId="33af7451-bb69-4898-932b-245a595d9551" definitionName="Namespace" rawValue="Example2.Contracts.Marketing" />
+                          </properties>
+                        </collection>
+                        <collection Id="443a3ccd-e036-45d1-aee9-136ad65de774" definitionId="fa52a7b2-5908-451e-a185-4eb52d4e6343" definitionName="Commands" instanceName="Commands">
+                          <properties>
+                            <property Id="5fc895e0-665d-411d-a792-bc93ec2fbcd2" definitionId="480d695b-e1f8-4869-adef-bd2aa2a2db53" definitionName="Namespace" rawValue="Example2.Internal.Commands.Marketing" />
+                          </properties>
+                        </collection>
+                        <collection Id="da70547a-8b20-4c6c-8c80-a959b7a6df69" definitionId="70cc6b8d-e54b-45a0-a7af-9ecf3dee7b5d" definitionName="Messages" instanceName="Messages">
+                          <properties>
+                            <property Id="0711a483-d0af-4ab8-b89a-2372b304a3bf" definitionId="886284e5-4f80-4b1b-ac4c-5e2e1874e64d" definitionName="Namespace" rawValue="Example2.Internal.Messages.Marketing" />
+                          </properties>
+                        </collection>
+                      </elements>
+                    </collection>
+                    <collection Id="30f26546-e8a8-4160-8a69-ebd61c9ee19d" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components" />
+                  </elements>
+                </element>
               </elements>
             </collection>
             <collection Id="1094de2c-b4db-4e1f-978b-a9d5c331af67" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints">

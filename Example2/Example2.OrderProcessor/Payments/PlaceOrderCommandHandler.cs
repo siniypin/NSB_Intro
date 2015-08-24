@@ -16,12 +16,16 @@ namespace Example2.Payments
             var createInvoiceCommand = new Example2.Internal.Commands.Payments.CreateInvoiceCommand { UserId = message.UserId };
             Bus.Send(createInvoiceCommand);
             
-            Bus.Publish<ContractCreatedEvent>(x => x.UserId = message.UserId);
-            //Bus.Publish<ContractCreatedExtendedEvent>(x => x.UserId = message.UserId);
+            //Bus.Publish<ContractCreatedEvent>(x => x.UserId = message.UserId);
+            Bus.Publish<ContractCreatedExtendedEvent>(x =>
+            {
+                x.UserId = message.UserId;
+                x.CampaignId = 1;
+            });
             
             
-            var orderPlacedEvent = new Example2.Contracts.Payments.OrderPlacedEvent { UserId = message.UserId };
-            Bus.Publish(orderPlacedEvent);
+            //var orderPlacedEvent = new Example2.Contracts.Payments.OrderPlacedEvent { UserId = message.UserId };
+            //Bus.Publish(orderPlacedEvent);
         }
     }
 }

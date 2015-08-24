@@ -77,6 +77,9 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fef5f28d3-e56e-4cdd-bb5a-35cc894c2961</SourceModelReference>
       <ItemGuid>afea0f2c-6e1c-47ac-bef9-ddf05d3e84a8</ItemGuid>
     </Compile>
+    <Compile Include="Marketing\CampaignActivityHandler.cs">
+      <ItemGuid>302d95c1-ee3e-4c82-a8f3-8be8955b77a9</ItemGuid>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <ItemGuid>385467eb-9a89-492c-9eb4-f21e6a8f4939</ItemGuid>
     </Compile>

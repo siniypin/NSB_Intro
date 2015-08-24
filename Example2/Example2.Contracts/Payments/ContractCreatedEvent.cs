@@ -7,7 +7,7 @@ namespace Example2.Contracts.Payments
         int UserId { get; set; }
     }
 
-    public interface ContractCreatedExtendedEvent : ContractCreatedEvent
+    public interface ContractCreatedExtendedEvent : ContractCreatedEvent, CampaignActivityOccured
     {
         DateTime Date { get; set; }
     }

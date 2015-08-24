@@ -43,6 +43,9 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f5635815e-0da3-4d05-a4fc-fe49551d6bc4</SourceModelReference>
       <ItemGuid>e731fe20-1c76-4361-af1c-5c83fe65760d</ItemGuid>
     </Compile>
+    <Compile Include="Payments\ContractCreatedFromCampaign.cs">
+      <ItemGuid>6e9a4447-f9d2-49cd-9b99-9958ae571c0d</ItemGuid>
+    </Compile>
     <Compile Include="Payments\InvoiceSentInEncashmentEvent.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f8e3797dd-12f5-458d-ab87-932cc25c8df9</SourceModelReference>
       <ItemGuid>487d116d-056c-4267-9456-e23dfbd76d72</ItemGuid>
