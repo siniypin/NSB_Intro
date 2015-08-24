@@ -12,7 +12,7 @@ using NServiceBus;
  
 namespace Example1.PaymentGateway
 {
-	public partial class EndpointConfig : IConfigureThisEndpoint, AsA_Server    
+	public partial class EndpointConfig : IConfigureThisEndpoint, AsA_Client    
 	{
     }
 }

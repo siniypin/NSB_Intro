@@ -39,10 +39,6 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Payments\CreateInvoiceCommand.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252f806d2b3d-889b-43e5-a8d7-c3f7ebe71724</SourceModelReference>
-      <ItemGuid>e6ac0ac1-b174-40e3-a21d-7929277905d9</ItemGuid>
-    </Compile>
     <Compile Include="Payments\PlaceOrderCommand.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252f414d4700-7aa8-4ed4-a104-4920543e621a</SourceModelReference>
       <ItemGuid>13b848af-9152-4687-89ce-ea19ddb2a6d0</ItemGuid>

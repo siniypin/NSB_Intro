@@ -47,6 +47,30 @@
                                 <reference Id="f1cafa10-484b-4ec6-a1d6-a43977e256f6" value="solution://a347cd91-c39d-4de2-8b36-bde1720dd5ad/e731fe20-1c76-4361-af1c-5c83fe65760d" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0757e840-a92f-4f7c-ade6-a9bc878796d4&quot;&#xD;&#xA;}" />
                               </references>
                             </element>
+                            <element Id="117ee9d0-ccd6-471e-a3f4-928866f0723f" definitionId="f06eaa91-971c-42ee-a7cb-eaa77a97dbdd" definitionName="Event" instanceName="ContractCreatedExtendedEvent">
+                              <properties>
+                                <property Id="c40ead64-9f23-48ad-8430-4f087d2e94c7" definitionId="1236f913-5219-4a1a-985d-0a936ac82306" definitionName="DoNotAutogenerateComponents" rawValue="False" />
+                              </properties>
+                              <references>
+                                <reference Id="d3b3d83c-e7ef-410d-8488-6f7963513d73" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0757e840-a92f-4f7c-ade6-a9bc878796d4&quot;&#xD;&#xA;}" />
+                              </references>
+                            </element>
+                            <element Id="8e3797dd-12f5-458d-ab87-932cc25c8df9" definitionId="f06eaa91-971c-42ee-a7cb-eaa77a97dbdd" definitionName="Event" instanceName="InvoiceSentInEncashmentEvent">
+                              <properties>
+                                <property Id="1d7c2687-6f3d-44f8-9910-b19b91f943b4" definitionId="1236f913-5219-4a1a-985d-0a936ac82306" definitionName="DoNotAutogenerateComponents" rawValue="False" />
+                              </properties>
+                              <references>
+                                <reference Id="130fa140-dfe8-4afd-94e7-3501bfc583b2" value="solution://a347cd91-c39d-4de2-8b36-bde1720dd5ad/487d116d-056c-4267-9456-e23dfbd76d72" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0757e840-a92f-4f7c-ade6-a9bc878796d4&quot;&#xD;&#xA;}" />
+                              </references>
+                            </element>
+                            <element Id="ff2c67e4-e110-4b94-8207-211860e0fcd8" definitionId="f06eaa91-971c-42ee-a7cb-eaa77a97dbdd" definitionName="Event" instanceName="OrderPlacedEvent">
+                              <properties>
+                                <property Id="bff8e6c9-86e5-405f-9150-c30556c4edb7" definitionId="1236f913-5219-4a1a-985d-0a936ac82306" definitionName="DoNotAutogenerateComponents" rawValue="False" />
+                              </properties>
+                              <references>
+                                <reference Id="a961efad-f4e0-4531-a325-49147952fdcb" value="solution://a347cd91-c39d-4de2-8b36-bde1720dd5ad/d6d49ec8-3988-45a7-87d8-448f24128307" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0757e840-a92f-4f7c-ade6-a9bc878796d4&quot;&#xD;&#xA;}" />
+                              </references>
+                            </element>
                           </elements>
                         </collection>
                         <collection Id="af889dd1-e19e-4147-ad63-2058a29837f8" definitionId="fa52a7b2-5908-451e-a185-4eb52d4e6343" definitionName="Commands" instanceName="Commands">
@@ -124,7 +148,7 @@
                             <property Id="2e632a58-51d9-49b5-a9e4-e2b3ec8bb176" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Internal.Commands.Payments;&#xD;&#xA;" />
                             <property Id="4058beaf-728a-4a7f-96ff-4ecb4a04bc6f" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IPlaceOrderCommandHandler, ServiceMatrix.Shared.INServiceBusComponent, IHandleMessages&lt;PlaceOrderCommand&gt;" />
                             <property Id="e18b7784-cb27-4913-ace7-4ce62a84647f" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(PlaceOrderCommand message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(PlaceOrderCommand message);&#xD;&#xA;&#xD;&#xA;        public void Send(CreateInvoiceCommand message)&#xD;&#xA;        {&#xD;&#xA;            ConfigureCreateInvoiceCommand(message);&#xD;&#xA;            Bus.Send(message);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        partial void ConfigureCreateInvoiceCommand(CreateInvoiceCommand message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
-                            <property Id="e29245e9-d8f1-4bb2-8fbc-345386a11b8b" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(PlaceOrderCommand message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: PlaceOrderCommandHandler: Add code to handle the PlaceOrderCommand message.&#xD;&#xA;            Console.WriteLine(&quot;Payments received &quot; + message.GetType().Name);&#xD;&#xA;&#xD;&#xA;            var createInvoiceCommand = new Example2.Internal.Commands.Payments.CreateInvoiceCommand();&#xD;&#xA;            Bus.Send(createInvoiceCommand);&#xD;&#xA;&#xD;&#xA;            var contractCreatedEvent = new Example2.Contracts.Payments.ContractCreatedEvent();&#xD;&#xA;            Bus.Publish(contractCreatedEvent);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="e29245e9-d8f1-4bb2-8fbc-345386a11b8b" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(PlaceOrderCommand message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: PlaceOrderCommandHandler: Add code to handle the PlaceOrderCommand message.&#xD;&#xA;            Console.WriteLine(&quot;Payments received &quot; + message.GetType().Name);&#xD;&#xA;&#xD;&#xA;            var createInvoiceCommand = new Example2.Internal.Commands.Payments.CreateInvoiceCommand();&#xD;&#xA;            Bus.Send(createInvoiceCommand);&#xD;&#xA;&#xD;&#xA;            var contractCreatedEvent = new Example2.Contracts.Payments.ContractCreatedEvent();&#xD;&#xA;            Bus.Publish(contractCreatedEvent);&#xD;&#xA;&#xD;&#xA;            var contractCreatedExtendedEvent = new Example2.Contracts.Payments.ContractCreatedExtendedEvent();&#xD;&#xA;            Bus.Publish(contractCreatedExtendedEvent);&#xD;&#xA;&#xD;&#xA;            var orderPlacedEvent = new Example2.Contracts.Payments.OrderPlacedEvent();&#xD;&#xA;            Bus.Publish(orderPlacedEvent);&#xD;&#xA;        }&#xD;&#xA;" />
                             <property Id="ea40119d-4e5e-4292-94ac-8f4bbd3e950d" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
                             <property Id="1de976f6-3d8d-4500-b92e-3a817a17ab46" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;        void Send(CreateInvoiceCommand message);&#xD;&#xA;" />
                             <property Id="b5640f9d-9826-4b5b-af1b-c7dc57a6e717" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
@@ -156,6 +180,22 @@
                                     <property Id="9c006235-bfa1-4d15-bafc-1dd30c581361" definitionId="9df92f68-33bc-4a00-aa34-2da1e40ac7b3" definitionName="ComponentName" rawValue="PlaceOrderCommandHandler" />
                                   </properties>
                                 </element>
+                                <element Id="6a62ce24-d14d-4b67-a8ff-a29cb5d8b3d6" definitionId="999b0f01-0b06-4b91-87aa-c8b7fb276c46" definitionName="EventLink" instanceName="ContractCreatedExtendedEvent">
+                                  <properties>
+                                    <property Id="4a6b25c6-c548-4030-9abf-c38ffe0f7bc2" definitionId="8f746710-e3d3-495d-a824-3192f8fe723d" definitionName="EventId" rawValue="117ee9d0-ccd6-471e-a3f4-928866f0723f" />
+                                    <property Id="f66cb66f-d2de-41a9-ad6e-1c62cdd74ffa" definitionId="14abd907-ac70-44db-83eb-3b10fe5d8b17" definitionName="EventName" rawValue="ContractCreatedExtendedEvent" />
+                                    <property Id="3d8923a5-d950-4e54-bb95-b53dbc3c2d3b" definitionId="16c22281-f2c1-49f5-ae4a-6b37ec08e1bf" definitionName="Namespace" rawValue="Example2.Payments" />
+                                    <property Id="efbe8a30-f77c-4a55-96a0-045a238e298b" definitionId="9df92f68-33bc-4a00-aa34-2da1e40ac7b3" definitionName="ComponentName" rawValue="PlaceOrderCommandHandler" />
+                                  </properties>
+                                </element>
+                                <element Id="981d2505-d93b-4f66-902d-58e71a481478" definitionId="999b0f01-0b06-4b91-87aa-c8b7fb276c46" definitionName="EventLink" instanceName="OrderPlacedEvent">
+                                  <properties>
+                                    <property Id="bac5425d-7b30-4dad-b854-567780d66adc" definitionId="8f746710-e3d3-495d-a824-3192f8fe723d" definitionName="EventId" rawValue="ff2c67e4-e110-4b94-8207-211860e0fcd8" />
+                                    <property Id="055f5a72-8bc6-4015-b4cf-b136584326fb" definitionId="14abd907-ac70-44db-83eb-3b10fe5d8b17" definitionName="EventName" rawValue="OrderPlacedEvent" />
+                                    <property Id="a367e38e-6148-49f1-9d7f-94af11c7356f" definitionId="16c22281-f2c1-49f5-ae4a-6b37ec08e1bf" definitionName="Namespace" rawValue="Example2.Payments" />
+                                    <property Id="1a4c9e7a-9230-4e80-bc10-8f6884704799" definitionId="9df92f68-33bc-4a00-aa34-2da1e40ac7b3" definitionName="ComponentName" rawValue="PlaceOrderCommandHandler" />
+                                  </properties>
+                                </element>
                               </elements>
                             </collection>
                             <collection Id="b6710a06-d47f-4245-967c-3a6e2b759520" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
@@ -180,7 +220,7 @@
                             <property Id="182fd2b9-b1d2-4dd3-b80b-8e9635977879" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Internal.Commands.Payments;&#xD;&#xA;" />
                             <property Id="163b1e60-e368-4e63-b570-38e90b141f9f" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;CreateInvoiceCommand&gt;" />
                             <property Id="7b3d7dac-5e5e-441c-834e-846172300fbf" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(CreateInvoiceCommand message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(CreateInvoiceCommand message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
-                            <property Id="7ed84cd6-248a-41ef-9ad1-422f78b73023" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(CreateInvoiceCommand message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: CreateInvoiceCommandHandler: Add code to handle the CreateInvoiceCommand message.&#xD;&#xA;            Console.WriteLine(&quot;Payments received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="7ed84cd6-248a-41ef-9ad1-422f78b73023" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(CreateInvoiceCommand message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: CreateInvoiceCommandHandler: Add code to handle the CreateInvoiceCommand message.&#xD;&#xA;            Console.WriteLine(&quot;Payments received &quot; + message.GetType().Name);&#xD;&#xA;&#xD;&#xA;            var invoiceSentInEncashmentEvent = new Example2.Contracts.Payments.InvoiceSentInEncashmentEvent();&#xD;&#xA;            Bus.Publish(invoiceSentInEncashmentEvent);&#xD;&#xA;        }&#xD;&#xA;" />
                             <property Id="5617b046-d08b-48a8-afa2-52eceaf88085" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
                             <property Id="167dc7f8-de09-470d-8ce4-819141e2092f" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
                             <property Id="f79419d8-a52f-44d1-9bf0-852aeaed729e" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
@@ -192,7 +232,18 @@
                             <reference Id="e36b347e-6927-4c9f-ba5d-9eecb0db1107" value="solution://03c95038-c972-456f-8e6d-754200e1c448/2c2cafee-24c8-4383-9938-375abff492aa" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
                           </references>
                           <elements>
-                            <collection Id="cafa0c54-db16-4525-a808-dfd140f7e6e5" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
+                            <collection Id="cafa0c54-db16-4525-a808-dfd140f7e6e5" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends">
+                              <elements>
+                                <element Id="be325fb6-8618-4280-b170-8fa55e6b9af4" definitionId="999b0f01-0b06-4b91-87aa-c8b7fb276c46" definitionName="EventLink" instanceName="InvoiceSentInEncashmentEvent">
+                                  <properties>
+                                    <property Id="c2ce8a4c-fa5d-4b19-9783-17a148898fa7" definitionId="8f746710-e3d3-495d-a824-3192f8fe723d" definitionName="EventId" rawValue="8e3797dd-12f5-458d-ab87-932cc25c8df9" />
+                                    <property Id="9ed4ccbc-2a8e-440c-a687-94aeb1af574a" definitionId="14abd907-ac70-44db-83eb-3b10fe5d8b17" definitionName="EventName" rawValue="InvoiceSentInEncashmentEvent" />
+                                    <property Id="45cf1a4f-9568-41c0-9dcc-b2b7f0d73630" definitionId="16c22281-f2c1-49f5-ae4a-6b37ec08e1bf" definitionName="Namespace" rawValue="Example2.Payments" />
+                                    <property Id="dfafd9d7-2464-40ae-af3f-ab95b4dce896" definitionId="9df92f68-33bc-4a00-aa34-2da1e40ac7b3" definitionName="ComponentName" rawValue="CreateInvoiceCommandHandler" />
+                                  </properties>
+                                </element>
+                              </elements>
+                            </collection>
                             <collection Id="a3c3b130-06b0-4838-b26c-3fc130d760e8" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
                               <elements>
                                 <element Id="b0950eac-1b83-4141-8fac-bf16b8f491e3" definitionId="1362e8eb-d279-4f17-82a0-97504b493ab3" definitionName="ProcessedCommandLink" instanceName="CreateInvoiceCommand">
@@ -200,7 +251,7 @@
                                     <property Id="c1298db7-4940-4cac-9813-5dffd73b5f97" definitionId="bb37f0f8-13a2-4b26-8b00-f900c5c42e37" definitionName="CommandId" rawValue="14615c28-8ac1-49a4-880d-abd811395f6d" />
                                     <property Id="be1a81d5-0dd1-4a0e-9ec3-d3554df889d6" definitionId="30899b31-2dfa-4a01-a00a-e86c90b4bf5d" definitionName="CommandName" rawValue="CreateInvoiceCommand" />
                                     <property Id="6cf10147-7335-441a-a1bd-fcc64dfa994d" definitionId="ab1926d8-63cc-4404-89fc-db24e1a18f3d" definitionName="Namespace" rawValue="Example2.Payments" />
-                                    <property Id="b918512e-0c83-4d07-a943-febf735d3f1d" definitionId="9a3afb25-11d0-40d5-a5a7-c580ecf96d28" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="b918512e-0c83-4d07-a943-febf735d3f1d" definitionId="9a3afb25-11d0-40d5-a5a7-c580ecf96d28" definitionName="PublishesAnEvent" rawValue="True" />
                                     <property Id="0efab073-2080-4061-b8ff-036bf34e37d2" definitionId="f0e71c5e-3f90-4257-b86d-546f78e97196" definitionName="CommandCodeIdentifier" rawValue="CreateInvoiceCommand" />
                                     <property Id="bc4644ec-ef75-47c6-9531-04f4aef43e87" definitionId="02d7bc46-2773-4929-8db8-71a2bba5bfb3" definitionName="StartsSaga" rawValue="False" />
                                   </properties>
@@ -236,36 +287,85 @@
                     </collection>
                     <collection Id="a3fc66d2-5846-46db-b2fd-d9518295c86d" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components">
                       <elements>
-                        <element Id="dce4fe08-b628-4eb7-a9d8-0e3f81045c83" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="ContractCreatedEventHandler">
+                        <element Id="ac8a8a1f-b890-4c1e-91dc-b71ea6529f8e" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="Membership">
                           <properties>
-                            <property Id="4bc9b6fc-ff63-4790-b2b9-42b77b69c1be" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
-                            <property Id="d744c54b-79b7-434f-afa4-5e09bc3b792c" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Contracts.Payments;&#xD;&#xA;" />
-                            <property Id="ba04629a-1eac-49f3-b4c4-c3a7fe82c546" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;ContractCreatedEvent&gt;" />
-                            <property Id="8d7dba5d-af68-49b3-b1f5-236dd11c7bd5" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(ContractCreatedEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(ContractCreatedEvent message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
-                            <property Id="646fc9c7-5d83-4080-b218-d59878bde0e3" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(ContractCreatedEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: ContractCreatedEventHandler: Add code to handle the ContractCreatedEvent message.&#xD;&#xA;            Console.WriteLine(&quot;PremiumMembership received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
-                            <property Id="522af3c9-1244-4264-8ec1-e1138d801e9d" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
-                            <property Id="84e750cf-bb17-40f1-ab2f-2389d91fd57f" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
-                            <property Id="4ff0dcc5-d6fb-415a-a404-11e454b36d74" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
-                            <property Id="2d90476a-5045-4759-83c5-46e7850e084b" definitionId="640126ae-7c81-42e4-bbe6-d685270cae55" definitionName="UnfoldedCustomCode" rawValue="True" />
-                            <property Id="8147f6bb-aa1a-4fce-9ef0-da9948067a8f" definitionId="0f96bb02-ec3e-4a5d-bc5d-d0518afea0aa" definitionName="IsBroadcastingViaSignalR" rawValue="False" />
+                            <property Id="25784da8-3925-4f3e-84a1-9c52d1a9a712" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
+                            <property Id="33372eec-d525-4596-bbf1-5dd6417dfd82" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Contracts.Payments;&#xD;&#xA;using NServiceBus.Saga;&#xD;&#xA;" />
+                            <property Id="79fcfcf4-af4c-4462-bcbe-c707d5d050f6" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": Saga&lt;MembershipSagaData&gt;, IAmStartedByMessages&lt;OrderPlacedEvent&gt;, IHandleMessages&lt;InvoiceSentInEncashmentEvent&gt;" />
+                            <property Id="0cde750a-fd67-4fcf-94ee-7fe71ada3c62" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(OrderPlacedEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Store message in Saga Data for later use&#xD;&#xA;&#x9;&#x9;&#x9;this.Data.OrderPlacedEvent = message;&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;// Check if Saga is Completed &#xD;&#xA;&#x9;&#x9;&#x9;CheckIfAllMessagesReceived();&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;public void Handle(InvoiceSentInEncashmentEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Store message in Saga Data for later use&#xD;&#xA;&#x9;&#x9;&#x9;this.Data.InvoiceSentInEncashmentEvent = message;&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;// Check if Saga is Completed &#xD;&#xA;&#x9;&#x9;&#x9;CheckIfAllMessagesReceived();&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(OrderPlacedEvent message);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(InvoiceSentInEncashmentEvent message);&#xD;&#xA;&#xD;&#xA;        public void CheckIfAllMessagesReceived()&#xD;&#xA;        {&#xD;&#xA;            if (this.Data.OrderPlacedEvent != null &amp;&amp; this.Data.InvoiceSentInEncashmentEvent != null)&#xD;&#xA;            {&#xD;&#xA;                AllMessagesReceived();&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        partial void AllMessagesReceived();&#xD;&#xA;     }&#xD;&#xA;&#xD;&#xA;     public partial class MembershipSagaData : IContainSagaData&#xD;&#xA;     {&#xD;&#xA;           public virtual Guid Id { get; set; }&#xD;&#xA;           public virtual string Originator { get; set; }&#xD;&#xA;           public virtual string OriginalMessageId { get; set; }&#xD;&#xA;&#xD;&#xA;           public virtual OrderPlacedEvent OrderPlacedEvent { get; set; }&#xD;&#xA;           public virtual InvoiceSentInEncashmentEvent InvoiceSentInEncashmentEvent { get; set; }&#xD;&#xA;" />
+                            <property Id="df4cef89-43ec-486b-9eca-21ad356d7cc9" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(OrderPlacedEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: Membership: Add code to handle the OrderPlacedEvent message.&#xD;&#xA;            Console.WriteLine(&quot;PremiumMembership received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        partial void HandleImplementation(InvoiceSentInEncashmentEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: Membership: Add code to handle the InvoiceSentInEncashmentEvent message.&#xD;&#xA;            Console.WriteLine(&quot;PremiumMembership received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="fe02e919-0209-4d5c-9516-73ecf14d39dd" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="True" />
+                            <property Id="75a0f45d-4c69-4147-add0-9ac6fa484f07" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
+                            <property Id="011c5c74-1af3-4bb1-b729-176afef19609" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;            mapper.ConfigureMapping&lt;InvoiceSentInEncashmentEvent&gt;(m =&gt; /* specify message property m.PropertyThatCorrelatesToSaga */).ToSaga(s =&gt; /* specify saga data property s.PropertyThatCorrelatesToMessage */);&#xD;&#xA;" />
+                            <property Id="7e64b629-7273-4be0-b23a-be0683df7e59" definitionId="640126ae-7c81-42e4-bbe6-d685270cae55" definitionName="UnfoldedCustomCode" rawValue="True" />
+                            <property Id="fe85cd3c-79f7-4473-ba55-7cc5c7a8cff7" definitionId="0f96bb02-ec3e-4a5d-bc5d-d0518afea0aa" definitionName="IsBroadcastingViaSignalR" rawValue="False" />
                           </properties>
                           <references>
-                            <reference Id="04645f02-77d4-413c-a38b-030f13367619" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/5cbebc16-9cd6-4c8a-85b4-4ae28add816a" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0fa0f1e3-2a8d-4e12-b629-9012e20354ad&quot;&#xD;&#xA;}" />
-                            <reference Id="426be374-d69c-457d-acfe-121b81574e63" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/6f5016a9-6d6e-422a-9b97-e9dd195b4a49" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
+                            <reference Id="bf149be6-d5d7-442d-a1b0-00b63505aba7" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/00457c63-68f4-477b-ba29-a2278196ddf1" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}ConfigureHowToFindSaga.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;8938e043-f81d-49a7-8c9b-35c02b437c67&quot;&#xD;&#xA;}" />
+                            <reference Id="e8670b9c-9726-4bf7-b0be-2acb267aebf8" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/4e5e63ff-1cf0-40d4-a69b-e6854c4e945a" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}SagaData.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;b2adde29-7d8c-4c77-9640-3aaa7ba96752&quot;&#xD;&#xA;}" />
+                            <reference Id="6fe76039-e5ba-40cf-950f-48eeee041b0b" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/f0cfa7bd-31eb-4ac4-80ff-58b899264ec3" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0fa0f1e3-2a8d-4e12-b629-9012e20354ad&quot;&#xD;&#xA;}" />
+                            <reference Id="ad575802-168b-416d-8709-6ed4260f4bc3" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/8dd499ba-d5a4-40f1-99cf-9f42f5830ea2" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
                           </references>
                           <elements>
-                            <collection Id="6a3cb248-6322-46d8-b467-5678d6fdf730" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
-                            <collection Id="a6f1808d-0b95-4125-8abc-3e5e983bd270" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
+                            <collection Id="c1491dce-ec89-44cd-a5e9-7304d8f9ddba" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
+                            <collection Id="3d63ae77-1915-4d7a-95b2-4621c19f029c" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
                               <elements>
-                                <element Id="16636e13-5813-4031-94e0-b4803bb82ed8" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="ContractCreatedEvent">
+                                <element Id="d4a5b66c-e758-4014-8329-79dcca6ae6e7" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="OrderPlacedEvent">
                                   <properties>
-                                    <property Id="da5905da-5494-4bee-a2d8-5184150ff64a" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="5635815e-0da3-4d05-a4fc-fe49551d6bc4" />
-                                    <property Id="526c4288-9804-41a2-b2e1-7b9877568f09" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="ContractCreatedEvent" />
-                                    <property Id="b0220f72-289b-4334-a297-f8e8a6116c75" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
-                                    <property Id="a55ac915-d38c-4ea8-bf35-e6d323ee26bd" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
-                                    <property Id="8c598abd-22a3-4efd-83e5-29bed2e17ebf" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="ContractCreatedEvent" />
-                                    <property Id="e0f8c278-4b55-48a2-a408-57f8b7df6d43" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="ContractCreatedEventHandler.cs" />
-                                    <property Id="b449b2db-c6f9-454a-96c0-4c481c572f45" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="False" />
+                                    <property Id="e93f6977-7aea-4347-9c0f-a352f8fd9058" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="ff2c67e4-e110-4b94-8207-211860e0fcd8" />
+                                    <property Id="49091d8c-3839-4001-a201-8918080de96f" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="OrderPlacedEvent" />
+                                    <property Id="b3b2fb81-8c5b-459c-809e-5af430f542ce" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
+                                    <property Id="fc6fdc0e-8124-4e77-894a-d61bf39ff949" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="9d9e1934-005e-44d9-b5f4-d8e018cc016d" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="OrderPlacedEvent" />
+                                    <property Id="3f5da038-9288-46d6-baaf-f54efff0200a" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="OrderPlacedEventHandler.cs" />
+                                    <property Id="59389445-6a21-4d7b-b2d3-4d21cfb65147" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="True" />
+                                  </properties>
+                                </element>
+                                <element Id="dff2e9db-fcb0-47ad-962f-d9109116f2b6" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="InvoiceSentInEncashmentEvent">
+                                  <properties>
+                                    <property Id="9d4959f0-9dd8-4728-a46c-0b1310d8adee" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="8e3797dd-12f5-458d-ab87-932cc25c8df9" />
+                                    <property Id="2ca58c1f-f3c0-4d1e-9b9f-1852656ba73f" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="InvoiceSentInEncashmentEvent" />
+                                    <property Id="3bf48863-9b3b-4357-b249-afbd3a101afe" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
+                                    <property Id="96d0edaa-7995-4888-b355-c65aba5d7a46" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="a8353c68-410d-4768-bb0f-81a3affb33e9" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="InvoiceSentInEncashmentEvent" />
+                                    <property Id="c15a6b2a-8b24-49ec-8a04-47ca91c8a6cd" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="InvoiceSentInEncashmentEventHandler.cs" />
+                                    <property Id="596a918a-b238-4bbf-8859-4fab7ae78dc2" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="False" />
+                                  </properties>
+                                </element>
+                              </elements>
+                            </collection>
+                          </elements>
+                        </element>
+                        <element Id="16f45b5c-5641-44f8-b9f5-9dea54254e63" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="SendTermsOfUsageHandler">
+                          <properties>
+                            <property Id="48fab043-9bcb-40e8-bbcf-8265ce8b1bfc" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
+                            <property Id="6c76c376-b328-4349-81a6-aa1bfc30cc13" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Contracts.Payments;&#xD;&#xA;" />
+                            <property Id="98631418-96cc-4bb2-b25a-654fa137c0a1" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;ContractCreatedEvent&gt;" />
+                            <property Id="33933230-00f7-40e3-8140-2ec2afb50ecc" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(ContractCreatedEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(ContractCreatedEvent message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
+                            <property Id="b3821da1-548e-4a7b-a371-7cbff8421ab3" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(ContractCreatedEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: SendTermsOfUsageHandler: Add code to handle the ContractCreatedEvent message.&#xD;&#xA;            Console.WriteLine(&quot;PremiumMembership received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="0170ee94-b958-4433-ac42-ee8ad94e0ffc" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
+                            <property Id="883192f8-2a3d-42ed-96e4-7c88b1cc460f" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
+                            <property Id="58a964b8-948b-49fe-9b7c-9a8f04fcda95" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
+                            <property Id="bd8599de-fde5-4f48-b9a8-d5db2f6f310c" definitionId="640126ae-7c81-42e4-bbe6-d685270cae55" definitionName="UnfoldedCustomCode" rawValue="True" />
+                            <property Id="753bc18c-4c03-4344-9b10-b18389ebe61d" definitionId="0f96bb02-ec3e-4a5d-bc5d-d0518afea0aa" definitionName="IsBroadcastingViaSignalR" rawValue="False" />
+                          </properties>
+                          <references>
+                            <reference Id="4e03017e-6a0a-430f-bf78-c5e267266274" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/36102f17-ca7a-466e-9f9d-2d85dfc8680b" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0fa0f1e3-2a8d-4e12-b629-9012e20354ad&quot;&#xD;&#xA;}" />
+                            <reference Id="44c0c71d-df77-4fba-9142-bc641f4c5c02" value="solution://7a767e51-55e5-4bfc-bfe2-69c23340355a/f7250199-db13-4e56-8d80-e5e877fe5170" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
+                          </references>
+                          <elements>
+                            <collection Id="af7ddde2-2714-40d6-9963-a29e54c8f22b" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
+                            <collection Id="b6df4114-b162-4e38-967d-3841eb1d3477" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
+                              <elements>
+                                <element Id="b96498f8-fd1f-4fea-aadb-bf20cc50cbf6" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="ContractCreatedEvent">
+                                  <properties>
+                                    <property Id="4010cfb8-fbb8-4085-8e1c-680d59fc6eb0" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="5635815e-0da3-4d05-a4fc-fe49551d6bc4" />
+                                    <property Id="0e6ebe0a-84de-454a-9f9a-fe6668af2526" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="ContractCreatedEvent" />
+                                    <property Id="530da0e1-cd38-4211-a557-90e9e5e2d371" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.PremiumMembership" />
+                                    <property Id="7f2d529d-7b8a-4f3e-8e7a-c1fadee8603e" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="23d0f6b2-cecb-42f3-8c65-1e9fbdbb2457" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="ContractCreatedEvent" />
+                                    <property Id="d4472886-3824-46c2-bcda-e6dcac6a9d4f" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="ContractCreatedEventHandler.cs" />
+                                    <property Id="e2a0fed8-0cdd-4aa1-8a90-81c935b588f4" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="False" />
                                   </properties>
                                 </element>
                               </elements>
@@ -299,36 +399,36 @@
                     </collection>
                     <collection Id="0bec2f04-e038-410e-b732-287573c53a65" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components">
                       <elements>
-                        <element Id="8ab76b5a-803b-48f7-8d63-fdfcc017f0b3" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="ContractCreatedEventHandler">
+                        <element Id="99d00129-b059-49a3-8fe4-922832e73792" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="ContractCreatedEventHandler">
                           <properties>
-                            <property Id="0124d1ba-96ed-4fb3-b171-b1dd4648d937" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" rawValue="Example2.Accounting" />
-                            <property Id="dff79dae-8518-4f77-9de7-916eae3dea30" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Contracts.Payments;&#xD;&#xA;" />
-                            <property Id="06d23a79-a01e-4fbd-93fd-95d9c894cc26" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;ContractCreatedEvent&gt;" />
-                            <property Id="1c9e4daa-b296-4088-bb73-cb218ec61b92" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(ContractCreatedEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(ContractCreatedEvent message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
-                            <property Id="1c106870-81dd-4d8c-8fd3-96b5ec557373" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(ContractCreatedEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: ContractCreatedEventHandler: Add code to handle the ContractCreatedEvent message.&#xD;&#xA;            Console.WriteLine(&quot;Accounting received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
-                            <property Id="78cd85ee-96c7-443c-978e-0432277b4094" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
-                            <property Id="03ef3f23-befd-4cb2-ac43-8672cf456d7f" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
-                            <property Id="6d094472-c501-4439-b665-de5017cd650f" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
-                            <property Id="445a4204-5c51-41a4-a1fb-17f83a10cb98" definitionId="640126ae-7c81-42e4-bbe6-d685270cae55" definitionName="UnfoldedCustomCode" rawValue="True" />
-                            <property Id="2f392f12-b7f3-4afa-805c-ae6e73d0bee4" definitionId="0f96bb02-ec3e-4a5d-bc5d-d0518afea0aa" definitionName="IsBroadcastingViaSignalR" rawValue="False" />
+                            <property Id="a2f9936b-f367-4b23-a9d0-b9a0c36322d6" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" rawValue="Example2.Accounting" />
+                            <property Id="fc44b1e8-1b66-4f37-ab51-c2a3f7640b90" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using Example2.Contracts.Payments;&#xD;&#xA;" />
+                            <property Id="37fb29ba-7b60-4db8-b375-27b844675286" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;ContractCreatedEvent&gt;" />
+                            <property Id="909161c5-3498-40aa-943a-36c4ada0fbd5" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(ContractCreatedEvent message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;// Handle message on partial class&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(ContractCreatedEvent message);&#xD;&#xA;&#xD;&#xA;        public IBus Bus { get; set; }&#xD;&#xA;" />
+                            <property Id="8198d921-ecd6-4115-b13a-f5edb8db8b9c" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(ContractCreatedEvent message)&#xD;&#xA;        {&#xD;&#xA;            // TODO: ContractCreatedEventHandler: Add code to handle the ContractCreatedEvent message.&#xD;&#xA;            Console.WriteLine(&quot;Accounting received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="be7a8cce-eb52-4004-9d07-5f5442a116e4" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
+                            <property Id="2e3e4543-2e03-4451-88a4-151bf70c8f1f" definitionId="5b80c9f7-44e6-4acc-a9db-1be527d89f81" definitionName="InterfaceBody" rawValue="&#xD;&#xA;" />
+                            <property Id="17b0c9b7-4d40-4ce5-8292-1d25b15f9799" definitionId="3da71921-7816-4280-a945-eaf182cb8ab9" definitionName="ConfigureHowToFindSagaBody" rawValue="&#xD;&#xA;" />
+                            <property Id="25fe831e-806c-42cb-b3c6-a2c1bf8b1743" definitionId="640126ae-7c81-42e4-bbe6-d685270cae55" definitionName="UnfoldedCustomCode" rawValue="True" />
+                            <property Id="8ebdb913-4431-445f-9712-edf0d2685ed3" definitionId="0f96bb02-ec3e-4a5d-bc5d-d0518afea0aa" definitionName="IsBroadcastingViaSignalR" rawValue="False" />
                           </properties>
                           <references>
-                            <reference Id="2793bde5-946d-4c7a-99ff-b8789a76454f" value="solution://9e2d7e16-22a1-41e4-9681-e0583527d1e5/52955307-5010-45d2-9db7-31b5c5ad6801" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0fa0f1e3-2a8d-4e12-b629-9012e20354ad&quot;&#xD;&#xA;}" />
-                            <reference Id="4e8be575-b0af-483f-ac19-06d50cd9991d" value="solution://9e2d7e16-22a1-41e4-9681-e0583527d1e5/245fea70-99ed-44cf-99f5-e701312cedc2" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
+                            <reference Id="37dec10e-3522-422f-9dca-6e4607d27754" value="solution://9e2d7e16-22a1-41e4-9681-e0583527d1e5/791ef949-1180-4671-8a86-7893993391b1" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;0fa0f1e3-2a8d-4e12-b629-9012e20354ad&quot;&#xD;&#xA;}" />
+                            <reference Id="5decbbeb-1263-4dcf-84d5-0a0e98258905" value="solution://9e2d7e16-22a1-41e4-9681-e0583527d1e5/1aee5fab-26a0-4e6f-9f4e-953b1676ffbe" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;36939d09-f7c3-45f5-881c-3908f1476ab4&quot;&#xD;&#xA;}" />
                           </references>
                           <elements>
-                            <collection Id="2e311eaa-f0a8-49b6-ac93-e7c6aa81d8d4" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
-                            <collection Id="83c2f5c9-a357-4387-82a0-c457812ef3d2" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
+                            <collection Id="aa8010bc-1133-4353-a7fd-bc2a179bf7e2" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
+                            <collection Id="196b8d2d-b31f-4b17-825e-8aab60b9ee6e" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
                               <elements>
-                                <element Id="63809a6b-b0fc-4ce9-a720-c282193e50bf" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="ContractCreatedEvent">
+                                <element Id="a81cd7ce-ae99-4260-8589-db70db8b502a" definitionId="75f698c0-fb68-4f37-b015-82cd5a1e367c" definitionName="SubscribedEventLink" instanceName="ContractCreatedEvent">
                                   <properties>
-                                    <property Id="db97e594-ac2a-47b9-8097-4cdb6237fce3" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="5635815e-0da3-4d05-a4fc-fe49551d6bc4" />
-                                    <property Id="02b1becb-86b6-46e1-b5bb-6b729799465c" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="ContractCreatedEvent" />
-                                    <property Id="be5d544f-e158-4e9e-bfff-e4c23eee0ecf" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.Accounting" />
-                                    <property Id="0af1215a-841f-4ede-b0ef-d9810abb684f" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
-                                    <property Id="09b7edc0-af9b-49e7-8782-5ec1031c0b68" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="ContractCreatedEvent" />
-                                    <property Id="2ea20559-1548-4855-8039-6e026c070afb" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="ContractCreatedEventHandler.cs" />
-                                    <property Id="b331c4cb-4d37-46ec-a79a-ae4e600ff482" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="False" />
+                                    <property Id="3ec3375c-282e-46e4-9dfa-3a24f58703ce" definitionId="26053fc0-a090-4d84-bf92-1f55771ab211" definitionName="EventId" rawValue="5635815e-0da3-4d05-a4fc-fe49551d6bc4" />
+                                    <property Id="05a20200-432a-4536-b478-b003170b3c90" definitionId="d1d77316-ca0b-4f89-a8af-ff8ff631b911" definitionName="EventName" rawValue="ContractCreatedEvent" />
+                                    <property Id="f9fe7749-8056-4c8e-829b-d5f427dd04c1" definitionId="192747b5-55f3-4627-83e7-31e39ebecacf" definitionName="Namespace" rawValue="Example2.Accounting" />
+                                    <property Id="bb29fb17-48d1-4c67-a9ec-1f68c05542fc" definitionId="e366fa7e-3f62-48c3-8ce3-e87617597de6" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="7b683968-f3fe-47f2-8da8-bd12de5962bf" definitionId="7c9fb6f6-3d66-4e0f-bd15-1c5725c2c5a9" definitionName="EventCodeIdentifier" rawValue="ContractCreatedEvent" />
+                                    <property Id="a093211f-ade3-4159-9ea4-fb9ab7f95a59" definitionId="79c1f735-fe1b-44d1-afe2-effc12d8474f" definitionName="HandlerFileName" rawValue="ContractCreatedEventHandler.cs" />
+                                    <property Id="978b1c59-336f-44e3-9fd7-28d5a9ffcca6" definitionId="4e27bf41-cdae-4f50-b782-d73f70dd7f6b" definitionName="StartsSaga" rawValue="False" />
                                   </properties>
                                 </element>
                               </elements>
@@ -337,6 +437,30 @@
                         </element>
                       </elements>
                     </collection>
+                  </elements>
+                </element>
+                <element Id="086bb4c2-065e-4cd3-ab24-f98fc3ff6680" definitionId="4aac6b0a-1178-4761-ac92-d2989a83335b" definitionName="Service" instanceName="Marketing">
+                  <elements>
+                    <collection Id="1ac51d0a-95f6-472c-bbac-4e3e64f9db63" definitionId="14dd0a39-32b5-4814-9ed5-4279aba392af" definitionName="Contract" instanceName="Contract">
+                      <elements>
+                        <collection Id="ea08d4bb-5c0c-4a8a-8d15-e1fe7eb2d7b2" definitionId="6b6c2df4-f261-4d62-819f-70e170c196ca" definitionName="Events" instanceName="Events">
+                          <properties>
+                            <property Id="c89d2fb9-3017-4322-9fa1-76d692187d54" definitionId="33af7451-bb69-4898-932b-245a595d9551" definitionName="Namespace" rawValue="Example2.Contracts.Marketing" />
+                          </properties>
+                        </collection>
+                        <collection Id="443a3ccd-e036-45d1-aee9-136ad65de774" definitionId="fa52a7b2-5908-451e-a185-4eb52d4e6343" definitionName="Commands" instanceName="Commands">
+                          <properties>
+                            <property Id="5fc895e0-665d-411d-a792-bc93ec2fbcd2" definitionId="480d695b-e1f8-4869-adef-bd2aa2a2db53" definitionName="Namespace" rawValue="Example2.Internal.Commands.Marketing" />
+                          </properties>
+                        </collection>
+                        <collection Id="da70547a-8b20-4c6c-8c80-a959b7a6df69" definitionId="70cc6b8d-e54b-45a0-a7af-9ecf3dee7b5d" definitionName="Messages" instanceName="Messages">
+                          <properties>
+                            <property Id="0711a483-d0af-4ab8-b89a-2372b304a3bf" definitionId="886284e5-4f80-4b1b-ac4c-5e2e1874e64d" definitionName="Namespace" rawValue="Example2.Internal.Messages.Marketing" />
+                          </properties>
+                        </collection>
+                      </elements>
+                    </collection>
+                    <collection Id="30f26546-e8a8-4160-8a69-ebd61c9ee19d" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components" />
                   </elements>
                 </element>
               </elements>
@@ -489,13 +613,13 @@
                 </element>
                 <element Id="2666bc46-c44f-4ede-9fcb-844e9e5d12bc" definitionId="d9665948-7e01-4896-9843-c03ca1eedba7" definitionName="NServiceBusHost" instanceName="MembershipProcessor">
                   <properties>
-                    <property Id="23b856f5-c68b-463d-9971-6678366a6237" definitionId="35ec46e6-cc15-4b4d-a7ec-3d409c1c3327" definitionName="ComponentsOrderDefinition" />
+                    <property Id="23b856f5-c68b-463d-9971-6678366a6237" definitionId="35ec46e6-cc15-4b4d-a7ec-3d409c1c3327" definitionName="ComponentsOrderDefinition" rawValue="&#xD;&#xA;&#x9;    public void SpecifyOrder(Order order)&#xD;&#xA;&#x9;    {&#xD;&#xA;&#x9;        order.Specify(First&lt;Example2.PremiumMembership.Membership&gt;.Then&lt;Example2.PremiumMembership.SendTermsOfUsageHandler&gt;());&#xD;&#xA;&#x9;    }" />
                     <property Id="e218f549-1825-4ca2-8fd6-7c73bc346cb3" definitionId="3f97f5c3-12af-4b4a-b405-78e6e10e549e" definitionName="ErrorQueue" rawValue="error" />
                     <property Id="7ed516cf-ad7d-421c-9733-c28ea62ab84b" definitionId="1b1b6743-320f-41a7-a368-0b6909c26807" definitionName="ForwardReceivedMessagesTo" rawValue="audit" />
                     <property Id="194d53a4-6902-4cae-b57b-ff049e34cfb2" definitionId="0614b355-46b4-4b33-af42-2ebc0b80f451" definitionName="MasterNode" />
                     <property Id="e5ce26eb-5a9b-4bc4-8255-ecd7a34bf8e5" definitionId="fd845ffc-6d1d-4e5c-a38d-21935da8c5e0" definitionName="MaxRetries" rawValue="2" />
                     <property Id="80c72a78-e16d-4a55-babd-b54a855522d9" definitionId="2961e1ef-a0c4-4edd-a15d-4c9bb664fa24" definitionName="MessageConventions" rawValue="namespace Example2.MembershipProcessor&#xD;&#xA;{&#xD;&#xA;    public class MessageConventions : INeedInitialization&#xD;&#xA;    {&#xD;&#xA;        public void Customize(BusConfiguration config)&#xD;&#xA;        {&#xD;&#xA;            config.Conventions()&#xD;&#xA;                .DefiningCommandsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Internal.Commands&quot;))&#xD;&#xA;                .DefiningEventsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Contracts&quot;))&#xD;&#xA;                .DefiningMessagesAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Internal.Messages&quot;));&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" />
-                    <property Id="19955404-274e-4ccc-8896-f5e36d74465d" definitionId="5efb5dcd-5cd5-4620-856c-46ca07231aee" definitionName="MessageEndpointMappingsConfig" rawValue="&lt;add Messages=&quot;Example2.Contracts.Payments.ContractCreatedEvent, Example2.Contracts&quot; Endpoint=&quot;Example2.OrderProcessor&quot; /&gt;&#xD;&#xA;" />
+                    <property Id="19955404-274e-4ccc-8896-f5e36d74465d" definitionId="5efb5dcd-5cd5-4620-856c-46ca07231aee" definitionName="MessageEndpointMappingsConfig" rawValue="&lt;add Messages=&quot;Example2.Contracts.Payments.OrderPlacedEvent, Example2.Contracts&quot; Endpoint=&quot;Example2.OrderProcessor&quot; /&gt;&#xD;&#xA;&lt;add Messages=&quot;Example2.Contracts.Payments.InvoiceSentInEncashmentEvent, Example2.Contracts&quot; Endpoint=&quot;Example2.PaymentGateway&quot; /&gt;&#xD;&#xA;&lt;add Messages=&quot;Example2.Contracts.Payments.ContractCreatedEvent, Example2.Contracts&quot; Endpoint=&quot;Example2.OrderProcessor&quot; /&gt;&#xD;&#xA;" />
                     <property Id="cfcc3f96-65b4-4422-88e7-3f2a20670b13" definitionId="36788670-d7ad-4535-9640-7085cbd3b322" definitionName="Namespace" rawValue="Example2.MembershipProcessor" />
                     <property Id="4924f462-e639-4b8b-8ac9-96aafbdfe8d6" definitionId="51b2d898-a5f5-41ce-bbc0-45fb03a8757e" definitionName="NumberOfWorkerThreads" rawValue="1" />
                     <property Id="7823867b-7542-4654-b5aa-4bdfa62dea46" definitionId="3ff156ab-2834-463c-a2be-339b0945df20" definitionName="SLA" />
@@ -525,11 +649,18 @@
                   <elements>
                     <collection Id="0b1ab56e-996b-425a-8394-ef92dc523c3e" definitionId="4640ec7c-c09c-42a6-90de-ff9cd99fd6b1" definitionName="Components" instanceName="Components">
                       <elements>
-                        <element Id="3e1e2381-16c8-4d50-bbc2-4f12eb7227be" definitionId="58bd0df2-5250-472d-a169-4d72726325ae" definitionName="ComponentLink" instanceName="01. PremiumMembership.ContractCreatedEventHandler">
+                        <element Id="35f524aa-20b7-4a4e-bbd2-22426709a8c8" definitionId="58bd0df2-5250-472d-a169-4d72726325ae" definitionName="ComponentLink" instanceName="01. PremiumMembership.Membership">
                           <properties>
-                            <property Id="37d4107b-3b11-479e-bc0b-a3851dafc08e" definitionId="66fb536d-f50e-4dcc-a671-77a42f3f9890" definitionName="ComponentId" rawValue="dce4fe08-b628-4eb7-a9d8-0e3f81045c83" />
-                            <property Id="7d1c725f-2e6c-4df3-a2ae-3655adf58384" definitionId="677c28b7-2bf4-4004-8327-d4f93f38107e" definitionName="ComponentName" rawValue="ContractCreatedEventHandler" />
-                            <property Id="160a6d78-f30c-4c24-a7c1-86a2d9b58ab9" definitionId="e583683a-1534-4e78-bc7e-3f071bc024c3" definitionName="Order" rawValue="1" />
+                            <property Id="a2eda3ec-17c4-43af-95a5-0bd02fe367f8" definitionId="66fb536d-f50e-4dcc-a671-77a42f3f9890" definitionName="ComponentId" rawValue="ac8a8a1f-b890-4c1e-91dc-b71ea6529f8e" />
+                            <property Id="899df057-3655-4b5e-a0a1-a3044f7eb3e4" definitionId="677c28b7-2bf4-4004-8327-d4f93f38107e" definitionName="ComponentName" rawValue="Membership" />
+                            <property Id="1a1dc253-6611-4c30-a372-e6b349c97557" definitionId="e583683a-1534-4e78-bc7e-3f071bc024c3" definitionName="Order" rawValue="1" />
+                          </properties>
+                        </element>
+                        <element Id="88e87d8e-5675-4cfb-9317-367c2af7631d" definitionId="58bd0df2-5250-472d-a169-4d72726325ae" definitionName="ComponentLink" instanceName="02. PremiumMembership.SendTermsOfUsageHandler">
+                          <properties>
+                            <property Id="0ef5ad25-af63-46c2-8ebe-e3c76ed21584" definitionId="66fb536d-f50e-4dcc-a671-77a42f3f9890" definitionName="ComponentId" rawValue="16f45b5c-5641-44f8-b9f5-9dea54254e63" />
+                            <property Id="75c61ef5-a565-4452-82c1-7c0beef3a6f1" definitionId="677c28b7-2bf4-4004-8327-d4f93f38107e" definitionName="ComponentName" rawValue="SendTermsOfUsageHandler" />
+                            <property Id="9e8fdc1b-f1f3-48b0-a56e-254b2e34b239" definitionId="e583683a-1534-4e78-bc7e-3f071bc024c3" definitionName="Order" rawValue="2" />
                           </properties>
                         </element>
                       </elements>
@@ -542,14 +673,14 @@
                     <property Id="224d7af2-f8dd-44cd-8b9c-8c8cde3a54b3" definitionId="3f97f5c3-12af-4b4a-b405-78e6e10e549e" definitionName="ErrorQueue" rawValue="error" />
                     <property Id="9eb72877-12ef-4c37-8e30-6b7ff005a0a7" definitionId="1b1b6743-320f-41a7-a368-0b6909c26807" definitionName="ForwardReceivedMessagesTo" rawValue="audit" />
                     <property Id="d073b289-02cb-4e64-b5b5-cf0b29617b26" definitionId="0614b355-46b4-4b33-af42-2ebc0b80f451" definitionName="MasterNode" />
-                    <property Id="86c5a1c5-9e6c-47c6-896a-cba79d633dda" definitionId="fd845ffc-6d1d-4e5c-a38d-21935da8c5e0" definitionName="MaxRetries" rawValue="2" />
+                    <property Id="86c5a1c5-9e6c-47c6-896a-cba79d633dda" definitionId="fd845ffc-6d1d-4e5c-a38d-21935da8c5e0" definitionName="MaxRetries" rawValue="5" />
                     <property Id="ab207fdf-b33e-478e-af97-219a36d7c2e3" definitionId="2961e1ef-a0c4-4edd-a15d-4c9bb664fa24" definitionName="MessageConventions" rawValue="namespace Example2.AccountingProcessor&#xD;&#xA;{&#xD;&#xA;    public class MessageConventions : INeedInitialization&#xD;&#xA;    {&#xD;&#xA;        public void Customize(BusConfiguration config)&#xD;&#xA;        {&#xD;&#xA;            config.Conventions()&#xD;&#xA;                .DefiningCommandsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Internal.Commands&quot;))&#xD;&#xA;                .DefiningEventsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Contracts&quot;))&#xD;&#xA;                .DefiningMessagesAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;Example2.Internal.Messages&quot;));&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" />
                     <property Id="4d9df5c2-dbc4-438c-89be-fe1bf2fc9265" definitionId="5efb5dcd-5cd5-4620-856c-46ca07231aee" definitionName="MessageEndpointMappingsConfig" rawValue="&lt;add Messages=&quot;Example2.Contracts.Payments.ContractCreatedEvent, Example2.Contracts&quot; Endpoint=&quot;Example2.OrderProcessor&quot; /&gt;&#xD;&#xA;" />
                     <property Id="3777dd9d-4e95-4026-beea-bdcca45a1e1e" definitionId="36788670-d7ad-4535-9640-7085cbd3b322" definitionName="Namespace" rawValue="Example2.AccountingProcessor" />
                     <property Id="65688ba9-ceb5-488f-8810-045425756d74" definitionId="51b2d898-a5f5-41ce-bbc0-45fb03a8757e" definitionName="NumberOfWorkerThreads" rawValue="1" />
                     <property Id="c5ceabe1-5ac2-4c11-85a4-292d263f36a2" definitionId="3ff156ab-2834-463c-a2be-339b0945df20" definitionName="SLA" />
                     <property Id="0a1f1478-65e8-479c-a82f-015b066c8c21" definitionId="44e518ec-0cb1-4e34-b579-b20e0fa3c7f7" definitionName="SLEnabled" rawValue="True" />
-                    <property Id="53c12335-bf1d-4719-9317-e0f2175a67a1" definitionId="ffe8330c-7115-42e2-8028-9cb7e3acc3a3" definitionName="SLNumberOfRetries" rawValue="3" />
+                    <property Id="53c12335-bf1d-4719-9317-e0f2175a67a1" definitionId="ffe8330c-7115-42e2-8028-9cb7e3acc3a3" definitionName="SLNumberOfRetries" rawValue="5" />
                     <property Id="70c8ae3c-fa07-484c-8d90-b3e5b947d65a" definitionId="caef918a-e61b-4748-98a0-48480a8776f6" definitionName="SLTimeIncrease" rawValue="00:00:10" />
                     <property Id="e837a72b-e008-480b-a57b-357a2b0f18cb" definitionId="df341285-27c0-409b-8eb6-f4bf61d5af45" definitionName="CommandSenderNeedsRegistration" rawValue="False" />
                     <property Id="f442bec8-c093-40db-806f-68eb6a539662" definitionId="95a79914-151f-48e5-b0e6-2dcbefdec2a9" definitionName="TargetNsbVersion" rawValue="NSB 5.0" />
@@ -574,11 +705,11 @@
                   <elements>
                     <collection Id="66cbccc1-8b90-4734-abcf-08ace76735a4" definitionId="4640ec7c-c09c-42a6-90de-ff9cd99fd6b1" definitionName="Components" instanceName="Components">
                       <elements>
-                        <element Id="52d2f128-3b1b-46f8-9dfd-df2d3dc64d99" definitionId="58bd0df2-5250-472d-a169-4d72726325ae" definitionName="ComponentLink" instanceName="01. Accounting.ContractCreatedEventHandler">
+                        <element Id="e082fd8d-1622-434a-899e-df611dac29e1" definitionId="58bd0df2-5250-472d-a169-4d72726325ae" definitionName="ComponentLink" instanceName="01. Accounting.ContractCreatedEventHandler">
                           <properties>
-                            <property Id="1ee89c3c-2618-4dea-9ebd-57901b3e10f0" definitionId="66fb536d-f50e-4dcc-a671-77a42f3f9890" definitionName="ComponentId" rawValue="8ab76b5a-803b-48f7-8d63-fdfcc017f0b3" />
-                            <property Id="a479d499-1035-46ad-a7ae-55a5650b11f9" definitionId="677c28b7-2bf4-4004-8327-d4f93f38107e" definitionName="ComponentName" rawValue="ContractCreatedEventHandler" />
-                            <property Id="c9f162f7-54a3-43f0-811a-e4c45672e6d6" definitionId="e583683a-1534-4e78-bc7e-3f071bc024c3" definitionName="Order" rawValue="1" />
+                            <property Id="06e190af-2645-4c00-b6c6-63d132b6efb8" definitionId="66fb536d-f50e-4dcc-a671-77a42f3f9890" definitionName="ComponentId" rawValue="99d00129-b059-49a3-8fe4-922832e73792" />
+                            <property Id="8d495e19-27e3-4034-a52d-b928a15474e7" definitionId="677c28b7-2bf4-4004-8327-d4f93f38107e" definitionName="ComponentName" rawValue="ContractCreatedEventHandler" />
+                            <property Id="1db35bf7-d7f9-4981-8bbf-9007ac81cbf2" definitionId="e583683a-1534-4e78-bc7e-3f071bc024c3" definitionName="Order" rawValue="1" />
                           </properties>
                         </element>
                       </elements>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NServiceBus;
 using Example2.Internal.Commands.Payments;
 

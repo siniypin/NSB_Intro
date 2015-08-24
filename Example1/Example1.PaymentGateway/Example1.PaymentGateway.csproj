@@ -69,14 +69,6 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252f318dd9c0-6300-4481-836d-b468f9f82165</SourceModelReference>
       <ItemGuid>4efd0237-f4da-42ce-acd1-e7b36f80613c</ItemGuid>
     </Compile>
-    <Compile Include="Infrastructure\Payments\CreateInvoiceCommandHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252fb7fd7ce9-3f6b-4682-ac5f-22caa73872b7</SourceModelReference>
-      <ItemGuid>5a53036b-1c34-40cc-aa5e-202ee08d6f48</ItemGuid>
-    </Compile>
-    <Compile Include="Payments\CreateInvoiceCommandHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252fb7fd7ce9-3f6b-4682-ac5f-22caa73872b7</SourceModelReference>
-      <ItemGuid>d32543ba-b354-4806-9016-d638353d55fc</ItemGuid>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <ItemGuid>52ffb9bc-ae90-4d99-a5ab-a2cf4e5a93cd</ItemGuid>
     </Compile>
@@ -145,7 +137,10 @@
       <Name>Example1.Internal</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Infrastructure\Payments\" />
+    <Folder Include="Payments\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <StartAction>Program</StartAction>

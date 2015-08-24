@@ -49,9 +49,6 @@
       <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.1.1.0\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ServiceControl.Plugin.Nsb5.SagaAudit">
-      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.SagaAudit.1.0.1\lib\net45\ServiceControl.Plugin.Nsb5.SagaAudit.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,13 +67,29 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f2666bc46-c44f-4ede-9fcb-844e9e5d12bc</SourceModelReference>
       <ItemGuid>4f5e025b-3fcc-4a87-9216-86b290d0f857</ItemGuid>
     </Compile>
-    <Compile Include="Infrastructure\PremiumMembership\ContractCreatedEventHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fdce4fe08-b628-4eb7-a9d8-0e3f81045c83</SourceModelReference>
-      <ItemGuid>5cbebc16-9cd6-4c8a-85b4-4ae28add816a</ItemGuid>
+    <Compile Include="Infrastructure\PremiumMembership\Membership.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fac8a8a1f-b890-4c1e-91dc-b71ea6529f8e</SourceModelReference>
+      <ItemGuid>f0cfa7bd-31eb-4ac4-80ff-58b899264ec3</ItemGuid>
     </Compile>
-    <Compile Include="PremiumMembership\ContractCreatedEventHandler.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fdce4fe08-b628-4eb7-a9d8-0e3f81045c83</SourceModelReference>
-      <ItemGuid>6f5016a9-6d6e-422a-9b97-e9dd195b4a49</ItemGuid>
+    <Compile Include="Infrastructure\PremiumMembership\SendTermsOfUsageHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f16f45b5c-5641-44f8-b9f5-9dea54254e63</SourceModelReference>
+      <ItemGuid>36102f17-ca7a-466e-9f9d-2d85dfc8680b</ItemGuid>
+    </Compile>
+    <Compile Include="PremiumMembership\Membership.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fac8a8a1f-b890-4c1e-91dc-b71ea6529f8e</SourceModelReference>
+      <ItemGuid>8dd499ba-d5a4-40f1-99cf-9f42f5830ea2</ItemGuid>
+    </Compile>
+    <Compile Include="PremiumMembership\MembershipConfigureHowToFindSaga.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fac8a8a1f-b890-4c1e-91dc-b71ea6529f8e</SourceModelReference>
+      <ItemGuid>00457c63-68f4-477b-ba29-a2278196ddf1</ItemGuid>
+    </Compile>
+    <Compile Include="PremiumMembership\MembershipSagaData.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252fac8a8a1f-b890-4c1e-91dc-b71ea6529f8e</SourceModelReference>
+      <ItemGuid>4e5e63ff-1cf0-40d4-a69b-e6854c4e945a</ItemGuid>
+    </Compile>
+    <Compile Include="PremiumMembership\SendTermsOfUsageHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example2/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example2\Example2.slnbldr%252f16f45b5c-5641-44f8-b9f5-9dea54254e63</SourceModelReference>
+      <ItemGuid>f7250199-db13-4e56-8d80-e5e877fe5170</ItemGuid>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <ItemGuid>3163e4e4-da99-4a45-9581-a15b1f454ce3</ItemGuid>
@@ -140,6 +153,10 @@
     <ProjectReference Include="..\Example2.Contracts\Example2.Contracts.csproj">
       <Project>{A347CD91-C39D-4DE2-8B36-BDE1720DD5AD}</Project>
       <Name>Example2.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Example2.Internal\Example2.Internal.csproj">
+      <Project>{d6dc2af6-5ae4-4e74-8917-edccf512cb40}</Project>
+      <Name>Example2.Internal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
