@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Example2.Contracts.Payments
+namespace Example2.Contracts.Marketing
 {
     public interface CampaignActivityOccured
     {

@@ -1,4 +1,5 @@
 using System;
+using Example2.Contracts.Marketing;
 
 namespace Example2.Contracts.Payments
 {

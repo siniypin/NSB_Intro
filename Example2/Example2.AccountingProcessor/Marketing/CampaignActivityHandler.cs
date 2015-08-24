@@ -1,4 +1,4 @@
-﻿using Example2.Contracts.Payments;
+﻿using Example2.Contracts.Marketing;
 using NServiceBus;
 using System;
 using System.Collections.Generic;
