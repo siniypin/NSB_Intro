@@ -15,13 +15,13 @@ namespace Example2.Payments
             Console.WriteLine("Payments received " + message.GetType().Name);
             var createInvoiceCommand = new Example2.Internal.Commands.Payments.CreateInvoiceCommand { UserId = message.UserId };
             Bus.Send(createInvoiceCommand);
-            
-            //Bus.Publish<ContractCreatedEvent>(x => x.UserId = message.UserId);
-            Bus.Publish<ContractCreatedExtendedEvent>(x =>
-            {
-                x.UserId = message.UserId;
-                x.CampaignId = 1;
-            });
+
+            Bus.Publish<ContractCreatedEvent>(x => x.UserId = message.UserId);
+            //Bus.Publish<ContractCreatedExtendedEvent>(x =>
+            //{
+            //    x.UserId = message.UserId;
+            //    x.CampaignId = 1;
+            //});
             
             
             //var orderPlacedEvent = new Example2.Contracts.Payments.OrderPlacedEvent { UserId = message.UserId };
