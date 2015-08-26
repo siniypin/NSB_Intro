@@ -23,11 +23,14 @@ namespace Example2.PremiumMembership
 
         partial void HandleImplementation(InvoiceSentInEncashmentEvent message)
         {
-            // TODO: Membership: Add code to handle the InvoiceSentInEncashmentEvent message.
-            Console.WriteLine("PremiumMembership received " + message.GetType().Name);
+            if (Data.IsPremium)
+            {
+                // TODO: Membership: Add code to handle the InvoiceSentInEncashmentEvent message.
+                Console.WriteLine("PremiumMembership received " + message.GetType().Name);
 
-            Data.IsPremium = false;
-            Console.WriteLine("User {0} became basic due to dunned invoice", Data.UserId);
+                Data.IsPremium = false;
+                Console.WriteLine("User {0} became basic due to dunned invoice", Data.UserId);
+            }
         }
 
         public void Timeout(MembershipExpiredTimeout timeout)
