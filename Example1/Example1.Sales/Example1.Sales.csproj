@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{04E8A780-DE53-4A8B-98A3-A0732102AA1F}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{2020A532-4C77-4A32-A430-FAC335329486}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Example1.PaymentGateway</RootNamespace>
-    <AssemblyName>Example1.PaymentGateway</AssemblyName>
+    <RootNamespace>Example1.Sales</RootNamespace>
+    <AssemblyName>Example1.Sales</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -56,25 +56,25 @@
     <Reference Include="System.Messaging" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EndpointConfigurator.cs" />
-    <Compile Include="OrderPlacedHandler.cs" />
     <Compile Include="Program.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252f318dd9c0-6300-4481-836d-b468f9f82165</SourceModelReference>
-      <ItemGuid>f6a11e73-3a3b-4ee1-9d85-b3325d23246d</ItemGuid>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252fd1c9a02c-9608-4cec-bc7f-792755f4f706</SourceModelReference>
+      <ItemGuid>39a3f63e-f891-46ff-aa5c-1250ced07815</ItemGuid>
+    </Compile>
+    <Compile Include="PlaceOrderCommandHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252fdcd953d7-4df0-4abd-8863-98ef7ba35b82</SourceModelReference>
+      <ItemGuid>d1d6ec77-7b35-4f7d-9dfe-c0d32e3de15e</ItemGuid>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
-      <ItemGuid>52ffb9bc-ae90-4d99-a5ab-a2cf4e5a93cd</ItemGuid>
+      <ItemGuid>e8d8ce18-ca75-4b29-8848-1ab64d24ce09</ItemGuid>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="NServiceBus.Host.exe.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="App.config">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252f318dd9c0-6300-4481-836d-b468f9f82165</SourceModelReference>
-      <ItemGuid>e25501ba-45c8-4d79-9de8-2496cd4ede7e</ItemGuid>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Example1/Element/C:\Users\IEUser\Documents\Visual Studio 2013\Projects\NSB_Intro\Example1\Example1.slnbldr%252fd1c9a02c-9608-4cec-bc7f-792755f4f706</SourceModelReference>
+      <ItemGuid>a5406801-47e3-4856-a525-61ec0ebc5771</ItemGuid>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
