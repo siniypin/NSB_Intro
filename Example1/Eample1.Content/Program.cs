@@ -1,19 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Example1.Contracts.Billing;
+using Example1.Contracts.Sales;
 using NServiceBus;
-using NServiceBus.Features;
 
-namespace Example1.Sales
+namespace Eample1.Content
 {
-    public static class Program
+    class Program
     {
-        static async Task Main()
+        static async Task Main(string[] args)
         {
-            Console.Title = "Example1.Sales";
-            var endpointConfiguration = new EndpointConfiguration("Example1.Sales");
+            Console.Title = "Example1.Content";
+            var endpointConfiguration = new EndpointConfiguration("Example1.Content");
             endpointConfiguration.EnableInstallers();
             endpointConfiguration.UsePersistence<InMemoryPersistence>();
-            endpointConfiguration.UseTransport<MsmqTransport>();
+            var transport = endpointConfiguration.UseTransport<MsmqTransport>();
+            transport.Routing().RegisterPublisher(typeof(OrderAcceptedEvent), "Example1.Sales");
+            transport.Routing().RegisterPublisher(typeof(OrderBilledEvent), "Example1.Billing");
             endpointConfiguration.SendFailedMessagesTo("errors");
             endpointConfiguration.AuditProcessedMessagesTo("audit");
             endpointConfiguration.Conventions()
