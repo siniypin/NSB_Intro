@@ -43,6 +43,8 @@
     <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Billing\OrderBilledEvent.cs" />
+    <Compile Include="Sales\OrderAcceptedEvent.cs" />
     <Compile Include="Sales\OrderPlacedEvent.cs" />
     <Compile Include="Sales\PlaceOrderCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
